@@ -14,7 +14,7 @@ For more detail and advance config, follow the series of ghost blog development 
 
 ## Overview
 
-![ghost-deployment-diagram.png](https://github.com/ngtrieuvi92/mvp-ghost-blog-docker/assets//vinguyen-blog-deployment-diagram-ghost-dockerjpg)
+![ghost-deployment-diagram](https://github.com/ngtrieuvi92/mvp-ghost-blog-docker/assets/vinguyen-blog-deployment-diagram-ghost-docker.jpg)
 
 ## Infrastructure
 - **Operating System** Ubuntu 22.04
