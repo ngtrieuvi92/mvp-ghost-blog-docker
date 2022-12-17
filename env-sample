@@ -1,0 +1,32 @@
+###################################################
+#          Ghost configuration                    #
+#          All Ghost config should be put here    #
+################################################### 
+
+# GHOST BLOG 
+NODE_ENV=production # set either production or development, then it will load the respective config
+PUBLIC_PORT=9090
+database__client=mysql
+database__connection__host=mysql
+database__connection__user=a-mysql-user
+database__connection__password=a-password-of-mysql-user
+database__connection__database=blogdatabase
+
+###################################################
+#          Mysql configuration                    #
+#          All Mysql config should be put here    #
+###################################################
+
+MYSQL_ROOT_PASSWORD=mysql-admin-password
+MYSQL_USER=a-mysql-user
+MYSQL_PASSWORD=a-password-of-mysql-user
+MYSQL_DATABASE=blogdatabase
+
+
+###################################################
+#          Restic configuration                   #
+#          All Restic config should be put here   #
+################################################### 
+
+RESTIC_BACKUP_REPO=rclone:<s3-compatible-config-name>:<bucket><folder>
+RESTIC_PASSWORD_FILE=../.restic-password

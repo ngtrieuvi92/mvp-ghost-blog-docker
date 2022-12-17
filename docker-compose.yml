@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  ghost:
+    image: ghost:5.22.9
+    container_name: blog_ghost
+    volumes:
+      - ./ghost/content:/var/lib/ghost/content:z
+    ports:
+      - ${PUBLIC_PORT:-2368}:2368
+    restart: always
+    env_file:
+      - ./.env
+    links:
+      - mysql
+
+  mysql:
+    image: mysql:8
+    container_name: blog_database
+    volumes:
+       - ./dbdata:/var/lib/mysql  # Persist storage
+    env_file:
+      - ./.env
+    expose:
+      - "3306"
+    restart: always
